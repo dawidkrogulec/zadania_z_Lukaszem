@@ -11,8 +11,15 @@ public class Main {
 
         dawid.setAge(dawid.getAge()+10);
         System.out.println("Dawid age " + dawid.getAge());
+
+        Main main = new Main();
+        dawid.setAge(main.addAge(dawid.getAge(), 12));
+        System.out.println("Dawid age " + dawid.getAge());
     }
 
-
+    int addAge(int age, int years) {
+        age = age + years;
+        return age;
+    }
 
 }
