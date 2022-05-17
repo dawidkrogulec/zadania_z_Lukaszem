@@ -19,10 +19,7 @@ public class Main {
         System.out.println("Dawid age " + dawid.getAge());
         dawid.setCommonField("wartosć wspolna dla wszystkich obiektow klasy Person");
         lucas.displayCommonField();
-        //Zadeklaruj liste typu BasicInterface
-        //Utworzyc 3 obiekty, po; jednym z kazdej klasy karol dawid lukasz
-        //Wstaw teg el.em enty do listy utworzonej 2 kroki wczrsniej
-        //Wy§wolaj metode displayClassNames i podaj tą liste jako parametr do tej metody
+
         List<BasicInterface> basicInterface = new ArrayList<>();
         basicInterface.add(karol);
         basicInterface.add(dawid);
@@ -30,6 +27,14 @@ public class Main {
         basicInterface.add(modifiedDawid);
 
         displayClassNames(basicInterface);
+
+        Address abc = new Address("Gdansk");
+
+
+        Osoba osoba1 = new Osoba("Karol", "Krogulec", abc);
+        Osoba osoba2 = new Osoba("Dawid", "Krogulec", new Address("Wejherowo"));
+
+
     }
     int addAge(int age, int years) {
         age = age + years;
