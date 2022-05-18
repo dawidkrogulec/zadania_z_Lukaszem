@@ -13,7 +13,7 @@ public class AddressStore {
 
     }
     public static void checkAddressStoreSize() {
-        System.out.println(addresses);
+        System.out.println(addresses.size());
 
     }
 }
