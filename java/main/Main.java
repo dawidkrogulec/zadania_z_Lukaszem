@@ -1,14 +1,15 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static main.AddressStore.checkAddressStoreSize;
 import static main.AddressStore.storeNewAddress;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Elo Dawid");
 
 //        Person karol = new Person("Karol", 37); //Tworzę nowy obiekt typu Person o nazwie karol
 //        Person lucas = new Person("Lucas", 25);
@@ -31,16 +32,28 @@ public class Main {
 
 //        displayClassNames(basicInterface);
 //
-        Address abc = new Address("Gdansk");
+//        Address abc = new Address("Gdansk");
+//
+//
+//        Osoba osoba1 = new Osoba("Karol", "Krogulec", abc);
+//        Osoba osoba2 = new Osoba("Dawid", "Krogulec", new Address("Wejherowo"));
+//
+//        storeNewAddress(osoba1);
+//        storeNewAddress(osoba2);
+//
+//        checkAddressStoreSize();
+
+//        Map<Integer, String> movies = new HashMap<Integer, String>();
+//        movies.put(1, "Joker");
+//        movies.put(2, "Jurassic World");
+//        movies.put(3, "Ulubiony film Dawida");
+//        movies.put(3, "Ulubiony film Lukasza");
+//        String movie = movies.get(3);
+//        System.out.println(movie);
+
+    checkAddressStoreSize();
 
 
-        Osoba osoba1 = new Osoba("Karol", "Krogulec", abc);
-        Osoba osoba2 = new Osoba("Dawid", "Krogulec", new Address("Wejherowo"));
-
-        storeNewAddress(osoba1);
-        storeNewAddress(osoba2);
-
-        checkAddressStoreSize();
     }
     int addAge(int age, int years) {
         age = age + years;
