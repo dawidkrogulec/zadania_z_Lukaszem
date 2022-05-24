@@ -4,7 +4,11 @@ public class Osoba {
     private String name;
     private String surname;
     private Address address;
+    private static int numberOfLegs = 2;
 
+    //Konstruktor klasy Osoba
+    //Określa jakiego typu są pola (zmienne) zadeklarowane powyżej
+    //Dodając słowo kluczowe this
     public Osoba(String name, String surname, Address address) {
         this.name = name;
         this.surname = surname;
