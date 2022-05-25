@@ -1,15 +1,31 @@
 package main;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import static main.AddressStore.checkAddressStoreSize;
-import static main.AddressStore.storeNewAddress;
+import static main.AgeStoreService.*;
 
 public class Main {
     public static void main(String[] args) {
+
+        storeAgeOfPerson(27);
+        storeAgeOfPerson(27);
+        storeAgeOfPerson(32);
+        storeAgeOfPerson(22);
+        storeAgeOfPerson(36);
+        storeAgeOfPerson(36);
+        storeAgeOfPerson(36);
+
+
+        checkHowManyPeopleHaveAge(27);
+        checkHowManyPeopleHaveAge(65);
+        checkHowManyPeopleHaveAge(36);
+        checkHowManyPeopleHaveAge(99);
+        checkHowManyPeopleHaveAge(32);
+
+
 
 //        Person karol = new Person("Karol", 37); //Tworzę nowy obiekt typu Person o nazwie karol
 //        Person lucas = new Person("Lucas", 25);
@@ -53,8 +69,9 @@ public class Main {
 
     checkAddressStoreSize();
 
-
     }
+
+
     int addAge(int age, int years) {
         age = age + years;
 
@@ -66,4 +83,5 @@ public class Main {
         }
 
     }
+
 }
