@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class AgeStoreService {
 
-    private static Map<Integer, Integer> ageStore = new HashMap<>();
+    private static Map<Integer, Integer> ageStore = new HashMap<>(); //
 
     public static Map<Integer, Integer> getAgeStore() {
 
