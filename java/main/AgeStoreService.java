@@ -38,16 +38,16 @@ public class AgeStoreService {
     //else
     //pobierz o becną wartość i zwiększ o 1
 
-    public static void checkHowManyPeopleHaveAge(int age) {
+    public static void checkHowManyPeopleHaveAge(int age) {  //Tworzymy publiczną, statyczną metodę o nazwie checkHowManyPeopleHaveAge, która jako argument przyjmuje wiek(age) i zwraca jego wartość(void)
         //if klucz istnieje
         //return wartość dla tego klucza
         //else
         //return 0
 
-        if (ageStore.containsKey(age)) {
-            System.out.println(ageStore.get(age));
+        if (ageStore.containsKey(age)) {                    //Za pomocą instrukcji warunkowych if else, sprawdzamy ile razy pojawia się w Mapie dany klucz
+            System.out.println(ageStore.get(age));          //Jeżeli klucz istnieje, to wyświetla w konsoli jego wartość
         } else {
-            System.out.println(0);
+            System.out.println(0);                          //Jeżeli nie istnieje, to wyświetla w konsoli warość 0
         }
     }
 }
