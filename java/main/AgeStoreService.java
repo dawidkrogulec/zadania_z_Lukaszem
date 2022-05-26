@@ -6,24 +6,24 @@ import java.util.Map;
 
 public class AgeStoreService {
 
-    private static Map<Integer, Integer> ageStore = new HashMap<>(); //
+    private static Map<Integer, Integer> ageStore = new HashMap<>(); //Na podstawie implementacji interfejsu Map, tworzymy nowy prywatny obiekt typu Map, który  (HashMapa swoje działanie opiera na tablicy obiektów klasy statycznej HashMap) i nadajemy mu nazwę ageStore.
+                                                                     //Mapa jako parametry przyjmuje <klucz, wartość>. operuje na podstawie klucza, czyli przypisuje wartość do konkretnego klucza
+    public static Map<Integer, Integer> getAgeStore() { // Tworzymy publiczną, stayczną metodę getAgeStore, która w wyniku zwraca wartość pobraną z Mapy utworzonej powyżej
 
-    public static Map<Integer, Integer> getAgeStore() {
-
-        return ageStore;
+        return ageStore; // Operując na podstawie klucza Mapy ageStore<klucz, wartość>, jako wynik zwraca nam wartość jaka jest do niego przypisana
     }
 
-    public AgeStoreService() {
+    public AgeStoreService() {       //Konstruktor klasy AgeStoreService
 
     }
 
-    public static void storeAgeOfPerson(int age) {
+    public static void storeAgeOfPerson(int age) {  //Tworzymy publiczną, statyczną metodę storeAgeOfPerson, która w tym przypadku zwróci (void) nam wiek
 
-        if (ageStore.containsKey(age)) {
-            int newAgeCount = ageStore.get(age) + 1;
-            ageStore.put(age, newAgeCount);
+        if (ageStore.containsKey(age)) {            //Ciało metody ageStore. Przy pomocy instrukcji warunkowych if else sprawdzamy,czy w Mapie jest zapisany klucz z interesującą nas wartością wieku
+            int newAgeCount = ageStore.get(age) + 1;//Jeżeli taki klucz istnieje, to pobiera jego wartość i zwiększa o 1
+            ageStore.put(age, newAgeCount);         //Następnie zapisuje jego wartość
         }
-        else {
+        else {                                      //Jeżeli nie istnieje, to zapisuje klucz z artością wieku
             ageStore.put(age, 1);
         }
 

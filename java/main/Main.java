@@ -27,7 +27,7 @@ public class Main {
 
 
 
-//        Person karol = new Person("Karol", 37); //Tworzę nowy obiekt typu Person o nazwie karol
+//        Person karol = new Person("Karol", 37); //Tworzę nowy obiekt typu Person o nazwie karol i nadaję mu wiek 37 lat
 //        Person lucas = new Person("Lucas", 25);
 //        Person dawid = new Person("Dawid", 29);
 //        Person modifiedDawid = new Person("ModifiedDawid", 21);
