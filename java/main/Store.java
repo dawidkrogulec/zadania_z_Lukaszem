@@ -33,8 +33,9 @@ public class Store {
             System.out.println(
                     "Currently processing order: "
                             + iter.next());
-            newOrders.remove(iter.next());
+
             processedOrders.add(iter.next());
+            newOrders.remove(iter.next());
         };
         System.out.println("Process order: " + processedOrders.toString());
     }
