@@ -1,8 +1,6 @@
 package main;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static main.AddressStore.checkAddressStoreSize;
 import static main.AgeStoreService.*;
@@ -10,7 +8,21 @@ import static main.AgeStoreService.*;
 public class Main {
     public static void main(String[] args) {
 
-        Order one = new Order(0 + "First order");
+        Order one = new Order(0,"First order");
+        Order two = new Order(1,"Second order");
+        Order three = new Order(2,"Third order");
+        Order four = new Order(3,"Fourth order");
+
+        Set<Order> orders = new LinkedHashSet<>();
+        orders.add(one);
+        orders.add(two);
+        orders.add(three);
+        orders.add(four);
+
+        Store store = new Store();
+        store.setNewOrders(orders);
+
+        store.processOrder();
 
 //        storeAgeOfPerson(27);
 //        storeAgeOfPerson(27);

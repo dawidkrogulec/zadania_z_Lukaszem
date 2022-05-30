@@ -20,7 +20,8 @@ public class Store {
     }
 
     public void processOrder() {
-        System.out.println("All new orders: " + newOrders);
+        System.out.println("All new orders: " + newOrders.toString());
+
 
         if (newOrders.isEmpty()) {
             throw new NoProcessedOrdersLeft("No more orders to be processed at the moment");
@@ -35,7 +36,7 @@ public class Store {
             newOrders.remove(iter.next());
             processedOrders.add(iter.next());
         };
-        System.out.println("Process order: " + processedOrders);
+        System.out.println("Process order: " + processedOrders.toString());
     }
     public void addNewOrders(Order nowe ) //Czescia składowa metody jest: modyfikator dostepu, typ nzwracany, nazwa metody i w () jeden lub więcej elementow. Kazdy z tych argumentów musi miec typ, oraz nazwe do ktorej mozemy sie odwolac wewnatrz tej metody
     {
@@ -45,6 +46,17 @@ public class Store {
         }
     }
 
+    public Set<Order> getNewOrders() {
+        return newOrders;
+    }
+
+    public void setNewOrders(Set<Order> newOrders) {
+        this.newOrders = newOrders;
+    }
+
+    public Set<Order> getProcessedOrders() {
+        return processedOrders;
+    }
 
     public void setProcessedOrders(Set<Order> processedOrders) {
         this.processedOrders = processedOrders;
