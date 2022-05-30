@@ -6,7 +6,8 @@ import java.util.Map;
 
 public class AgeStoreService {
 
-    private static Map<Integer, Integer> ageStore = new HashMap<>(); //Na podstawie implementacji interfejsu Map, tworzymy nowy prywatny obiekt typu Map, który  (HashMapa swoje działanie opiera na tablicy obiektów klasy statycznej HashMap) i nadajemy mu nazwę ageStore.
+    private static Map<Integer, Integer> ageStore = new HashMap<>(); //Na podstawie implementacji interfejsu Map, tworzymy nowy prywatny obiekt typu Map, który
+    //  (HashMapa swoje działanie opiera na tablicy obiektów klasy statycznej HashMap) i nadajemy mu nazwę ageStore.
                                                                      //Mapa jako parametry przyjmuje <klucz, wartość>. operuje na podstawie klucza, czyli przypisuje wartość do konkretnego klucza
     public static Map<Integer, Integer> getAgeStore() { // Tworzymy publiczną, stayczną metodę getAgeStore, która w wyniku zwraca wartość pobraną z Mapy utworzonej powyżej
 
@@ -38,7 +39,7 @@ public class AgeStoreService {
     //else
     //pobierz o becną wartość i zwiększ o 1
 
-    public static void checkHowManyPeopleHaveAge(int age) {  //Tworzymy publiczną, statyczną metodę o nazwie checkHowManyPeopleHaveAge, która jako argument przyjmuje wiek(age) i zwraca jego wartość(void)
+    public static void checkHowManyPeopleHaveAge(int age) {  //Tworzymy publiczną, statyczną metodę o nazwie checkHowManyPeopleHaveAge, która jako argument przyjmuje wiek(age)
         //if klucz istnieje
         //return wartość dla tego klucza
         //else
