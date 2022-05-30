@@ -25,12 +25,14 @@ public class Order { // Wszystkie pola w klasie musza miec settery gettery i kon
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return Objects.equals(orderNumber, order.orderNumber) && Objects.equals(description, order.description);
+        return Objects.equals(orderNumber, order.orderNumber);
+
+
     }
 
     @Override
     public int hashCode() { //Służy do szybkiego porównywania HashCode dla obiektu, który jest liczbą całkowitą i jest nadawany przy tworzeniu obiektu
-        return Objects.hash(orderNumber, description);
+        return Objects.hash(orderNumber);
     }
 
     public Integer getOrderNumber() {

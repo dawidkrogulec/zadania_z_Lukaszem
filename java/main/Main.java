@@ -10,20 +10,22 @@ import static main.AgeStoreService.*;
 public class Main {
     public static void main(String[] args) {
 
-        storeAgeOfPerson(27);
-        storeAgeOfPerson(27);
-        storeAgeOfPerson(32);
-        storeAgeOfPerson(22);
-        storeAgeOfPerson(36);
-        storeAgeOfPerson(36);
-        storeAgeOfPerson(36);
+        Order one = new Order(0 + "First order");
 
-
-        checkHowManyPeopleHaveAge(27);
-        checkHowManyPeopleHaveAge(65);
-        checkHowManyPeopleHaveAge(36);
-        checkHowManyPeopleHaveAge(99);
-        checkHowManyPeopleHaveAge(32);
+//        storeAgeOfPerson(27);
+//        storeAgeOfPerson(27);
+//        storeAgeOfPerson(32);
+//        storeAgeOfPerson(22);
+//        storeAgeOfPerson(36);
+//        storeAgeOfPerson(36);
+//        storeAgeOfPerson(36);
+//
+//
+//        checkHowManyPeopleHaveAge(27);
+//        checkHowManyPeopleHaveAge(65);
+//        checkHowManyPeopleHaveAge(36);
+//        checkHowManyPeopleHaveAge(99);
+//        checkHowManyPeopleHaveAge(32);
 
 
 
